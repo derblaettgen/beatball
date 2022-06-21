@@ -10,10 +10,10 @@ class BeatBallMaterial extends THREE.ShaderMaterial {
         uColor_1: { value: new THREE.Color(0, 0.74, 0.54) },
         uColor_2: { value: new THREE.Color(1, 1, 0.4) },
         uBassDrum: { value: 0 },
-        uStabSynth: { value: 0 }
+        uStabSynth: { value: 0 },
       },
       vertexShader: glsl`
-        precision mediump float;
+        precision highp float;
 
         uniform float uTime;
         uniform float uBassDrum;
@@ -65,7 +65,7 @@ class BeatBallMaterial extends THREE.ShaderMaterial {
     
           gl_FragColor = vec4(color, 1.0);
         }
-      `
+      `,
     });
   }
 }
