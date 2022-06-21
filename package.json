@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": ".",
   "dependencies": {
     "@babel/core": "7.15.5",
     "@react-three/drei": "9.13.2",
